@@ -1,7 +1,7 @@
 {
   "name": "typed-query-parser",
-  "version": "0.0.2",
-  "description": "yet another js/ts query string parser",
+  "version": "1.0.0",
+  "description": "type-guarded query string parsers",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
