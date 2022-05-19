@@ -8,7 +8,7 @@
     "prebuild": "shx rm -rf dist",
     "build": "rollup -c",
     "postbuild": "shx rm -rf dist/dts & shx cp LICENSE package.json readme.md dist && json -I -f dist/package.json -e \"this.devDependencies=undefined; this.scripts=undefined; this.jest=undefined;\"",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test": "jest",
     "ci:test": "jest",
     "ci:lint": "eslint \"src/**/*.ts\""
   },
@@ -53,6 +53,7 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "jest": "^28.1.0",
+    "jest-runner-eslint": "^1.0.1",
     "json": "^11.0.0",
     "prettier": "^2.6.2",
     "react": "^18.1.0",
@@ -73,8 +74,24 @@
     }
   },
   "jest": {
-    "transform": {},
-    "preset": "ts-jest",
-    "testEnvironment": "node"
+    "projects": [
+      {
+        "displayName": "test",
+        "transform": {},
+        "preset": "ts-jest",
+        "testEnvironment": "node"
+      },
+      {
+        "displayName": "lint",
+        "runner": "jest-runner-eslint",
+        "testMatch": ["<rootDir>/src/**/*.ts"]
+      }
+    ]
+  },
+  "jest-runner-eslint": {
+    "cliOptions": {
+      "maxWarnings": 0,
+      "ignorePattern": ["/dist/*"]
+    }
   }
 }
