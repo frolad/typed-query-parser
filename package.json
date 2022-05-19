@@ -1,0 +1,80 @@
+{
+  "name": "typed-query-parser",
+  "version": "0.0.2",
+  "description": "yet another js/ts query string parser",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "prebuild": "shx rm -rf dist",
+    "build": "rollup -c",
+    "postbuild": "shx rm -rf dist/dts & shx cp LICENSE package.json readme.md dist && json -I -f dist/package.json -e \"this.devDependencies=undefined; this.scripts=undefined; this.jest=undefined;\"",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "ci:test": "jest",
+    "ci:lint": "eslint \"src/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frolad/typed-query-parser.git"
+  },
+  "keywords": [
+    "query-string",
+    "query-parser",
+    "typed-query-parser"
+  ],
+  "author": "Vladimir Frolov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frolad/typed-query-parser/issues"
+  },
+  "homepage": "https://github.com/frolad/typed-query-parser#readme",
+  "dependencies": {
+    "decode-uri-component": "^0.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.12",
+    "@babel/plugin-transform-typescript": "^7.17.12",
+    "@babel/preset-env": "^7.17.12",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-eslint": "^8.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.2",
+    "@types/decode-uri-component": "^0.2.0",
+    "@types/jest": "^27.5.1",
+    "@types/react": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "concurrently": "^7.2.0",
+    "esbuild": "^0.14.39",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.2.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "jest": "^28.1.0",
+    "json": "^11.0.0",
+    "prettier": "^2.6.2",
+    "react": "^18.1.0",
+    "rollup": "^2.73.0",
+    "rollup-plugin-dts": "^4.2.1",
+    "rollup-plugin-esbuild": "^4.9.1",
+    "shx": "^0.3.4",
+    "ts-jest": "^28.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  },
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "jest": {
+    "transform": {},
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}
