@@ -15,6 +15,6 @@ jobs:
         with:
           node-version: '12'
           cache: npm
-      - name: Test and lint
       - run: npm install
-      - run: npm run ci:test
+      - name: Test and lint
+        run: npm run ci:test
