@@ -10,10 +10,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Test and linn
       - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '12'
-      - run: npm ci
+          node-version: 14
+          cache: 'npm'
+      - run: npm install
       - run: npm run ci:test
