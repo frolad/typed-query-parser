@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="typed-query-parser.jpg" />
+  <img src="typed-query-parser.png" />
 </p>
 
 Fast and light type-guarded query string parsers (handy hook for react included) with ability to set default value.
