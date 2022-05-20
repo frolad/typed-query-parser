@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="typed-query-parser.png" />
+  <img src="https://raw.githubusercontent.com/frolad/typed-query-parser/HEAD/typed-query-parser.png" />
 </p>
 
 [![Build Size](https://img.shields.io/bundlephobia/minzip/typed-query-parser?label=bundle%20size&style=flat&colorA=434c55&colorB=24292f)](https://bundlephobia.com/package/typed-query-parser@1.0.0)
