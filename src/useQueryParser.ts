@@ -86,9 +86,7 @@ function useQueryParser<O extends {[_: string]: QueryValueType}>(
       }
     }
 
-    /*
-      tbd: in the perefect world this "set" is not needed cause change of queryString should trigger effect bellow
-    */
+    currentQueryString.current = newQuery;
     setParsedQuery(s => ({...s, ...queryVars}));
 
     return newQuery;
