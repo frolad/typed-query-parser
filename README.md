@@ -4,7 +4,7 @@
 
 [![Build Size](https://img.shields.io/bundlephobia/minzip/typed-query-parser?label=bundle%20size&style=flat&colorA=434c55&colorB=24292f)](https://bundlephobia.com/package/typed-query-parser@1.0.0)
 [![Version](https://img.shields.io/npm/v/typed-query-parser?style=flat&colorA=434c55&colorB=24292f)](https://www.npmjs.com/package/typed-query-parser)
-[![Build Status](https://github.com/frolad/typed-query-parser/actions/workflows/test-and-lint.yml/badge.svg)]([https://github.com/pmndrs/zustand/actions?query=workflow%3ALint](https://github.com/frolad/typed-query-parser/actions/workflows/test-and-lint.yml))
+[![Build Status](https://github.com/frolad/typed-query-parser/actions/workflows/test-and-lint.yml/badge.svg)](https://github.com/frolad/typed-query-parser/actions/workflows/test-and-lint.yml)
 
 Fast and light type-guarded query string parsers (handy hook for react included) with ability to set default value.
 
