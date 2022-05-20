@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/frolad/typed-query-parser/HEAD/typed-query-parser.png" />
 </p>
 
-[![Build Size](https://img.shields.io/bundlephobia/minzip/typed-query-parser?label=bundle%20size&style=flat&colorA=434c55&colorB=24292f)](https://bundlephobia.com/package/typed-query-parser@1.0.0)
+[![Build Size](https://img.shields.io/bundlephobia/minzip/typed-query-parser?label=bundle%20size&style=flat&colorA=434c55&colorB=24292f)](https://bundlephobia.com/package/typed-query-parser@1.0.1)
 [![Version](https://img.shields.io/npm/v/typed-query-parser?style=flat&colorA=434c55&colorB=24292f)](https://www.npmjs.com/package/typed-query-parser)
 [![Build Status](https://github.com/frolad/typed-query-parser/actions/workflows/test-and-lint.yml/badge.svg)](https://github.com/frolad/typed-query-parser/actions/workflows/test-and-lint.yml)
 
