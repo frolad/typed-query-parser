@@ -2,7 +2,11 @@
   <img src="typed-query-parser.png" />
 </p>
 
-Fast and light type-guarded query string parsers (handy hook for react included) with ability to set default value.
+[![Build Size](https://img.shields.io/bundlephobia/minzip/typed-query-parser?label=bundle%20size&style=flat&colorA=434c55&colorB=24292f)](https://bundlephobia.com/package/typed-query-parser@1.0.0)
+[![Version](https://img.shields.io/npm/v/typed-query-parser?style=flat&colorA=434c55&colorB=24292f)](https://www.npmjs.com/package/typed-query-parser)
+[![Build Status](https://github.com/frolad/typed-query-parser/actions/workflows/test-and-lint.yml/badge.svg)](https://github.com/frolad/typed-query-parser/actions/workflows/test-and-lint.yml)
+
+Fast and light type-guarded query string parsers (handy hook for react included) with ability to set default values.
 
 ```bash
 npm install typed-query-parser
@@ -229,7 +233,7 @@ you can pass `array_separator` OR `array_preset` to the third parameter as well 
 
 ### Typescript
 
-Package is fully typed and mostly you don't need any special type of it, all tho you may want to get Typescript type of Schema to be able to use it as props etc. To do so use expored type `Static`
+Package is fully typed and mostly you don't need any special type of it, all tho you may want to get Typescript type of Schema to be able to use it as props etc. To do so use exported type `Static`
 
 ```ts
 import {CreateSchema, Static} from 'typed-query-parser'
