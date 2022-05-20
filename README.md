@@ -6,7 +6,7 @@
 [![Version](https://img.shields.io/npm/v/typed-query-parser?style=flat&colorA=434c55&colorB=24292f)](https://www.npmjs.com/package/typed-query-parser)
 [![Build Status](https://github.com/frolad/typed-query-parser/actions/workflows/test-and-lint.yml/badge.svg)](https://github.com/frolad/typed-query-parser/actions/workflows/test-and-lint.yml)
 
-Fast and light type-guarded query string parsers (handy hook for react included) with ability to set default value.
+Fast and light type-guarded query string parsers (handy hook for react included) with ability to set default values.
 
 ```bash
 npm install typed-query-parser
